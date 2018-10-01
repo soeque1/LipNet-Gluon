@@ -1,3 +1,5 @@
+## reference: https://github.com/rizkiarm/LipNet
+
 import os
 import numpy as np
 from scipy import ndimage
