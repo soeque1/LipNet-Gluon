@@ -9,8 +9,6 @@ import dlib
 import os, fnmatch, sys, errno  
 from skimage import io
 
-from multi import multi_p_run, put_worker
-
 def mkdir_p(path):
     try:
         os.makedirs(path)
@@ -190,7 +188,7 @@ def preprocess(from_idx, to_idx):
     _SOURCE_PATH = 'datasets/'
     TARGET_PATH = 'TARGET/' 
 
-    FACE_PREDICTOR_PATH = 'shape_predictor_68_face_landmarks.dat'
+    FACE_PREDICTOR_PATH = './shape_predictor_68_face_landmarks.dat'
     succ = set()
     fail = set()
     for idx in range(from_idx, to_idx):
@@ -215,6 +213,3 @@ def preprocess(from_idx, to_idx):
             fail.add(idx)
     return (succ, fail)
 
-if __name__ == '__main__':
-    res = multi_p_run(35, put_worker, preprocess, 7)
-    print (res)
