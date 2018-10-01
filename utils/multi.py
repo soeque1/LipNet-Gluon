@@ -5,7 +5,7 @@ def multi_p_run(tot_num, _func, worker, n_process):
     out_q = Queue()
     procs = []
     
-    split_num = split_seq(list(range(1, tot_num)), n_process) # start 1
+    split_num = split_seq(list(range(0, tot_num)), n_process) # start 0
 
     print (tot_num, ">>", split_num)
 
