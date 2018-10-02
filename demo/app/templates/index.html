@@ -17,7 +17,8 @@
 
         <p> Answer: {{align}} </p>
         <p> Predicted: {{predicted}} </p> 
-        <video controls src={{url_for('static', filename=video_url)}} > 
+        <video src={{url_for('static', filename=video_url)}} controls></video> 
+<!--<iframe id="video" width="100%" style="height: 100%" src={{url_for('static', filename=video_url)}}></iframe> -->
 
     </body> 
 </html>
