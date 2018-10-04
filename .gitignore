@@ -4,7 +4,7 @@ dlib/
 models/
 post_process.ipynb
 *.tgz
-
+*.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
