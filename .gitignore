@@ -1,6 +1,10 @@
 # USER Defined
 utils/datasets/
 dlib/
+models/
+post_process.ipynb
+*.tgz
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
